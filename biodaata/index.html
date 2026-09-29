@@ -1,1 +1,1426 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sofyan | My Profile</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Poppins:wght@300;400;500;600&display=swap');
+
+        :root {
+            --black: #080808;
+            --dark: #111111;
+            --card: #161616;
+            --gold: #d99a32;
+            --gold-light: #f0c66b;
+            --orange: #d86f22;
+            --silver: #d8d8d8;
+            --white: #f5f5f5;
+            --gray: #aaaaaa;
+            --border: rgba(217, 154, 50, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--white);
+            background:
+                radial-gradient(
+                    circle at 15% 20%,
+                    rgba(216, 111, 34, 0.12),
+                    transparent 28%
+                ),
+                radial-gradient(
+                    circle at 85% 60%,
+                    rgba(217, 154, 50, 0.08),
+                    transparent 30%
+                ),
+                var(--black);
+            line-height: 1.7;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* =========================
+           NAVBAR
+        ========================== */
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 999;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            padding: 18px 7%;
+
+            background: rgba(5, 5, 5, 0.88);
+            backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid rgba(217, 154, 50, 0.15);
+        }
+
+        .logo {
+            font-family: 'Cinzel', serif;
+            color: var(--gold-light);
+            font-size: 20px;
+            letter-spacing: 3px;
+        }
+
+        nav ul {
+            display: flex;
+            gap: 25px;
+            list-style: none;
+        }
+
+        nav a {
+            color: var(--gray);
+            font-size: 13px;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: var(--gold-light);
+        }
+
+        /* =========================
+           HERO
+        ========================== */
+
+        .hero {
+            min-height: 100vh;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            position: relative;
+            overflow: hidden;
+
+            background:
+                radial-gradient(
+                    circle at 50% 45%,
+                    rgba(217, 154, 50, 0.20),
+                    transparent 22%
+                ),
+                radial-gradient(
+                    circle at 70% 70%,
+                    rgba(216, 111, 34, 0.13),
+                    transparent 25%
+                ),
+                linear-gradient(
+                    135deg,
+                    #050505,
+                    #151515,
+                    #080808
+                );
+        }
+
+        .hero::before {
+            content: "";
+            position: absolute;
+            width: 500px;
+            height: 500px;
+
+            border: 1px solid rgba(217, 154, 50, 0.15);
+            border-radius: 50%;
+
+            box-shadow:
+                0 0 80px rgba(217, 154, 50, 0.08),
+                inset 0 0 80px rgba(217, 154, 50, 0.05);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+
+            width: 90%;
+            max-width: 850px;
+
+            text-align: center;
+        }
+
+        .small-title {
+            color: var(--gold);
+            font-size: 12px;
+            letter-spacing: 6px;
+            margin-bottom: 15px;
+        }
+
+        .hero h1 {
+            font-family: 'Cinzel', serif;
+            font-size: clamp(55px, 10vw, 105px);
+            letter-spacing: 8px;
+
+            background: linear-gradient(
+                120deg,
+                #ffffff,
+                #bcbcbc,
+                #f0b94f
+            );
+
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        .hero h2 {
+            font-family: 'Cinzel', serif;
+            font-weight: 400;
+            color: var(--silver);
+            letter-spacing: 3px;
+        }
+
+        .hero p {
+            max-width: 650px;
+            margin: 25px auto;
+
+            color: var(--gray);
+            font-size: 14px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .btn {
+            display: inline-block;
+
+            padding: 11px 23px;
+
+            border: 1px solid var(--border);
+            border-radius: 30px;
+
+            color: var(--white);
+            background: rgba(0, 0, 0, 0.5);
+
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-4px);
+
+            color: #111;
+            background: var(--gold);
+
+            box-shadow:
+                0 0 25px rgba(217, 154, 50, 0.35);
+        }
+
+        /* =========================
+           SECTION
+        ========================== */
+
+        section {
+            width: 90%;
+            max-width: 1100px;
+
+            margin: auto;
+            padding: 100px 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title span {
+            color: var(--gold);
+            font-size: 12px;
+            letter-spacing: 5px;
+        }
+
+        .section-title h2 {
+            margin-top: 8px;
+
+            font-family: 'Cinzel', serif;
+            font-size: clamp(28px, 5vw, 42px);
+        }
+
+        .section-title p {
+            max-width: 650px;
+            margin: 12px auto;
+
+            color: var(--gray);
+            font-size: 14px;
+        }
+
+        /* =========================
+           CARD
+        ========================== */
+
+        .card {
+            padding: 30px;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    rgba(255,255,255,0.025),
+                    rgba(217,154,50,0.015)
+                ),
+                var(--card);
+
+            border: 1px solid var(--border);
+            border-radius: 18px;
+
+            box-shadow:
+                0 15px 40px rgba(0,0,0,0.35);
+
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-4px);
+
+            border-color: rgba(217,154,50,0.6);
+
+            box-shadow:
+                0 20px 50px rgba(0,0,0,0.5);
+        }
+
+        /* =========================
+           MOTIVASI
+        ========================== */
+
+        .quote {
+            max-width: 850px;
+            margin: auto;
+
+            text-align: center;
+        }
+
+        .quote p {
+            color: #ddd;
+            font-size: 17px;
+        }
+
+        .quote strong {
+            color: var(--gold-light);
+        }
+
+        /* =========================
+           SKILLS
+        ========================== */
+
+        .skills {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 35px;
+        }
+
+        .skill {
+            margin-bottom: 22px;
+        }
+
+        .skill-header {
+            display: flex;
+            justify-content: space-between;
+
+            margin-bottom: 8px;
+
+            font-size: 14px;
+        }
+
+        .skill-header span:last-child {
+            color: var(--gold-light);
+            font-size: 12px;
+        }
+
+        .bar {
+            height: 7px;
+
+            background: #292929;
+            border-radius: 10px;
+
+            overflow: hidden;
+        }
+
+        .bar span {
+            display: block;
+            height: 100%;
+
+            border-radius: 10px;
+
+            background:
+                linear-gradient(
+                    90deg,
+                    #8b4d12,
+                    #d99a32,
+                    #f2c66d
+                );
+        }
+
+        /* =========================
+           PROJECT
+        ========================== */
+
+        .project-card {
+            display: grid;
+            grid-template-columns: 1fr auto;
+            gap: 30px;
+            align-items: center;
+        }
+
+        .project-card h3 {
+            margin-bottom: 12px;
+
+            font-family: 'Cinzel', serif;
+            color: var(--gold-light);
+            font-size: 22px;
+        }
+
+        .project-card p {
+            color: #bdbdbd;
+            font-size: 14px;
+        }
+
+        .project-info {
+            margin-top: 18px;
+            color: #999;
+            font-size: 13px;
+        }
+
+        .tech-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+
+            margin-top: 18px;
+        }
+
+        .tech {
+            padding: 5px 12px;
+
+            border: 1px solid rgba(217,154,50,0.25);
+            border-radius: 20px;
+
+            color: var(--gold-light);
+            font-size: 11px;
+        }
+
+        /* =========================
+           COMMIT
+        ========================== */
+
+        .terminal {
+            overflow: hidden;
+
+            background: #050505;
+
+            border: 1px solid #292929;
+            border-radius: 15px;
+        }
+
+        .terminal-top {
+            padding: 10px 15px;
+
+            background: #151515;
+            color: #777;
+
+            font-family: monospace;
+            font-size: 12px;
+        }
+
+        .terminal-body {
+            padding: 25px;
+
+            overflow-x: auto;
+
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+        }
+
+        .command {
+            color: #f0bd52;
+        }
+
+        .commit {
+            color: #bbb;
+            margin-top: 8px;
+        }
+
+        /* =========================
+           EDUCATION
+        ========================== */
+
+        .timeline {
+            position: relative;
+            max-width: 850px;
+            margin: auto;
+        }
+
+        .timeline::before {
+            content: "";
+
+            position: absolute;
+
+            left: 15px;
+            top: 0;
+            bottom: 0;
+
+            width: 1px;
+
+            background:
+                linear-gradient(
+                    transparent,
+                    var(--gold),
+                    transparent
+                );
+        }
+
+        .timeline-item {
+            position: relative;
+
+            padding-left: 55px;
+            margin-bottom: 35px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+
+            left: 7px;
+            top: 8px;
+
+            width: 17px;
+            height: 17px;
+
+            border-radius: 50%;
+
+            background: var(--gold);
+
+            box-shadow:
+                0 0 20px rgba(217,154,50,0.5);
+        }
+
+        .timeline-item h3 {
+            color: var(--gold-light);
+
+            font-family: 'Cinzel', serif;
+        }
+
+        .timeline-item span {
+            color: #777;
+            font-size: 13px;
+        }
+
+        /* =========================
+           IDENTITY
+        ========================== */
+
+        .identity {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .identity-item {
+            padding: 18px;
+
+            background: rgba(255,255,255,0.025);
+
+            border: 1px solid rgba(255,255,255,0.07);
+            border-radius: 12px;
+        }
+
+        .identity-item small {
+            display: block;
+
+            color: var(--gold);
+            margin-bottom: 3px;
+        }
+
+        /* =========================
+           THEME
+        ========================== */
+
+        .theme-box {
+            max-width: 850px;
+            margin: auto;
+
+            text-align: center;
+        }
+
+        .theme-box p {
+            color: #bbb;
+            font-size: 14px;
+        }
+
+        .symbols {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+
+            margin-top: 35px;
+        }
+
+        .symbol {
+            width: 85px;
+            height: 85px;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            border: 1px solid var(--border);
+            border-radius: 50%;
+
+            color: var(--gold-light);
+            font-size: 28px;
+
+            transition: 0.4s;
+        }
+
+        .symbol:hover {
+            transform: scale(1.1) rotate(8deg);
+
+            box-shadow:
+                0 0 30px rgba(217,154,50,0.25);
+        }
+
+        /* =========================
+           FOOTER
+        ========================== */
+
+        footer {
+            padding: 60px 20px;
+
+            text-align: center;
+
+            background: #050505;
+
+            border-top: 1px solid rgba(217,154,50,0.15);
+        }
+
+        footer h2 {
+            font-family: 'Cinzel', serif;
+            color: var(--gold-light);
+            letter-spacing: 4px;
+        }
+
+        footer p {
+            margin-top: 10px;
+
+            color: #777;
+            font-size: 13px;
+        }
+
+        .footer-links {
+            margin-top: 20px;
+        }
+
+        .footer-links a {
+            margin: 0 10px;
+
+            color: #aaa;
+            font-size: 13px;
+
+            transition: 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--gold-light);
+        }
+
+        /* =========================
+           RESPONSIVE
+        ========================== */
+
+        @media (max-width: 750px) {
+
+            nav {
+                padding: 15px 5%;
+            }
+
+            nav ul {
+                display: none;
+            }
+
+            .hero {
+                min-height: 90vh;
+            }
+
+            .hero h1 {
+                font-size: 50px;
+                letter-spacing: 4px;
+            }
+
+            .hero h2 {
+                font-size: 17px;
+            }
+
+            section {
+                width: 88%;
+                padding: 75px 0;
+            }
+
+            .skills,
+            .identity {
+                grid-template-columns: 1fr;
+            }
+
+            .project-card {
+                grid-template-columns: 1fr;
+            }
+
+            .card {
+                padding: 23px;
+            }
+
+            .quote p {
+                font-size: 15px;
+            }
+        }
+
+        @media (max-width: 360px) {
+
+            .hero h1 {
+                font-size: 40px;
+            }
+
+            .hero p {
+                font-size: 12px;
+            }
+
+            .btn {
+                width: 100%;
+            }
+
+            .section-title h2 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav>
+
+        <div class="logo">
+            SOFYAN
+        </div>
+
+        <ul>
+            <li><a href="#motivasi">Motivasi</a></li>
+            <li><a href="#skills">Skill</a></li>
+            <li><a href="#proyek">Proyek</a></li>
+            <li><a href="#commit">Commit</a></li>
+            <li><a href="#pendidikan">Pendidikan</a></li>
+            <li><a href="#identitas">Identitas</a></li>
+        </ul>
+
+    </nav>
+
+
+    <!-- =========================
+         HERO
+    ========================== -->
+
+    <header class="hero">
+
+        <div class="hero-content">
+
+            <div class="small-title">
+                道 · MY PROFILE · P1
+            </div>
+
+            <h1>
+                SOFYAN
+            </h1>
+
+            <h2>
+                Mahasiswa Informatika
+            </h2>
+
+            <p>
+                Sebuah perjalanan untuk terus belajar,
+                mencoba, membangun, dan mengembangkan
+                kemampuan di dunia teknologi.
+            </p>
+
+            <div class="buttons">
+
+                <a
+                    href="https://github.com/Sofyant17"
+                    target="_blank"
+                    class="btn"
+                >
+                    ⚔ GitHub
+                </a>
+
+                <!-- GANTI # DENGAN LINK VIDEO P1 -->
+                <a
+                    href="#"
+                    class="btn"
+                >
+                    ▶ Video P1
+                </a>
+
+                <a
+                    href="#motivasi"
+                    class="btn"
+                >
+                    ↓ Mulai Perjalanan
+                </a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <!-- =========================
+         1. MOTIVASI
+    ========================== -->
+
+    <section id="motivasi">
+
+        <div class="section-title">
+
+            <span>心境 · XINJING</span>
+
+            <h2>
+                Perjalanan Batin
+            </h2>
+
+            <p>
+                Setiap perjalanan dimulai dari satu langkah.
+            </p>
+
+        </div>
+
+        <div class="card quote">
+
+            <p>
+                Saya ingin terus mengembangkan kemampuan
+                di bidang teknologi dan pemrograman agar
+                dapat menghasilkan sesuatu yang bermanfaat.
+                Setiap proyek menjadi kesempatan bagi saya
+                untuk belajar, mencoba hal baru, dan
+                meningkatkan kemampuan sedikit demi sedikit.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         2. KEMAMPUAN TEKNOLOGI
+    ========================== -->
+
+    <section id="skills">
+
+        <div class="section-title">
+
+            <span>修炼 · XIULIAN</span>
+
+            <h2>
+                Jalur Teknologi
+            </h2>
+
+            <p>
+                Kemampuan teknologi yang telah saya pelajari
+                dan sedang saya kembangkan.
+            </p>
+
+        </div>
+
+        <div class="card">
+
+            <div class="skills">
+
+                <div>
+
+                    <div class="skill">
+
+                        <div class="skill-header">
+                            <span>HTML / CSS</span>
+                            <span>Menengah</span>
+                        </div>
+
+                        <div class="bar">
+                            <span style="width: 70%;"></span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill">
+
+                        <div class="skill-header">
+                            <span>JavaScript</span>
+                            <span>Pemula</span>
+                        </div>
+
+                        <div class="bar">
+                            <span style="width: 50%;"></span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill">
+
+                        <div class="skill-header">
+                            <span>Python</span>
+                            <span>Pemula</span>
+                        </div>
+
+                        <div class="bar">
+                            <span style="width: 50%;"></span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <div class="skill">
+
+                        <div class="skill-header">
+                            <span>Git / GitHub</span>
+                            <span>Pemula</span>
+                        </div>
+
+                        <div class="bar">
+                            <span style="width: 50%;"></span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill">
+
+                        <div class="skill-header">
+                            <span>TypeScript</span>
+                            <span>Pemula</span>
+                        </div>
+
+                        <div class="bar">
+                            <span style="width: 45%;"></span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="skill">
+
+                        <div class="skill-header">
+                            <span>Flutter</span>
+                            <span>Sedang dipelajari</span>
+                        </div>
+
+                        <div class="bar">
+                            <span style="width: 30%;"></span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         3. PROYEK
+    ========================== -->
+
+    <section id="proyek">
+
+        <div class="section-title">
+
+            <span>法宝 · FABAO</span>
+
+            <h2>
+                Artefak Proyek
+            </h2>
+
+            <p>
+                Proyek yang pernah saya kerjakan
+                selama proses belajar.
+            </p>
+
+        </div>
+
+
+        <div class="card project-card">
+
+            <div>
+
+                <h3>
+                    📚 Sistem Informasi Perpustakaan
+                </h3>
+
+                <p>
+                    Sistem informasi perpustakaan yang
+                    digunakan untuk mengelola data buku,
+                    kategori buku, rak, dan pengguna.
+                    Proyek ini dibuat sebagai tugas UAS
+                    Pemrograman Web dengan frontend dan
+                    backend yang terhubung melalui REST API.
+                </p>
+
+                <div class="project-info">
+
+                    <strong>Peran:</strong>
+                    Frontend & Backend
+
+                </div>
+
+
+                <div class="tech-list">
+
+                    <span class="tech">
+                        Svelte
+                    </span>
+
+                    <span class="tech">
+                        Express.js
+                    </span>
+
+                    <span class="tech">
+                        TypeScript
+                    </span>
+
+                    <span class="tech">
+                        Drizzle ORM
+                    </span>
+
+                    <span class="tech">
+                        MariaDB
+                    </span>
+
+                    <span class="tech">
+                        REST API
+                    </span>
+
+                </div>
+
+            </div>
+
+
+            <div>
+
+                <!-- GANTI # DENGAN LINK REPOSITORY PERPUSTAKAAN -->
+                <a
+                    href="#"
+                    class="btn"
+                >
+                    Lihat Repository
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         4. BUKTI COMMIT
+    ========================== -->
+
+    <section id="commit">
+
+        <div class="section-title">
+
+            <span>道痕 · DAO HEN</span>
+
+            <h2>
+                Jejak Perjalanan
+            </h2>
+
+            <p>
+                Riwayat pekerjaan pada repository
+                My Profile.
+            </p>
+
+        </div>
+
+
+        <div class="terminal">
+
+            <div class="terminal-top">
+                sofyan@my-profile: ~
+            </div>
+
+            <div class="terminal-body">
+
+                <p>
+                    <span class="command">
+                        $ git log --oneline -5
+                    </span>
+                </p>
+
+                <!-- CONTOH.
+                     NANTI GANTI DENGAN COMMIT ASLI KAMU -->
+
+                <p class="commit">
+                    xxxxxxx style(p1): tema + polish
+                </p>
+
+                <p class="commit">
+                    xxxxxxx feat(p1): biodata + foto
+                </p>
+
+                <p class="commit">
+                    xxxxxxx docs(p1): init My Profile
+                </p>
+
+                <br>
+
+                <p>
+                    <span class="command">
+                        $ git status
+                    </span>
+                </p>
+
+                <p class="commit">
+                    working tree clean
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div style="text-align:center; margin-top:25px;">
+
+            <a
+                href="https://github.com/Sofyant17"
+                target="_blank"
+                class="btn"
+            >
+                ↗ Lihat GitHub
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         5. PENDIDIKAN
+    ========================== -->
+
+    <section id="pendidikan">
+
+        <div class="section-title">
+
+            <span>求道 · QIU DAO</span>
+
+            <h2>
+                Jalan Menuntut Ilmu
+            </h2>
+
+            <p>
+                Riwayat pendidikan saya.
+            </p>
+
+        </div>
+
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="card">
+
+                    <h3>
+                        Universitas Madura
+                    </h3>
+
+                    <span>
+                        2024 — Sekarang
+                    </span>
+
+                    <p>
+                        Program Studi Informatika.
+                        Mempelajari pemrograman,
+                        basis data, pengembangan web,
+                        sistem informasi, dan teknologi
+                        perangkat lunak.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!--
+                TAMBAHKAN DATA SMA/SMK KAMU
+                DI BAGIAN INI
+            -->
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="card">
+
+                    <h3>
+                        Pendidikan Menengah
+                    </h3>
+
+                    <span>
+                        Tahun pendidikan
+                    </span>
+
+                    <p>
+                        Nama sekolah dan jurusan
+                        dapat ditambahkan di sini.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         6. IDENTITAS
+    ========================== -->
+
+    <section id="identitas">
+
+        <div class="section-title">
+
+            <span>身份 · SHENFEN</span>
+
+            <h2>
+                Identitas Pribadi
+            </h2>
+
+            <p>
+                Informasi singkat untuk kebutuhan
+                portofolio.
+            </p>
+
+        </div>
+
+
+        <div class="card identity">
+
+            <div class="identity-item">
+
+                <small>
+                    Nama Lengkap
+                </small>
+
+                <strong>
+                    Sofyan
+                </strong>
+
+            </div>
+
+
+            <div class="identity-item">
+
+                <small>
+                    Nama Panggilan
+                </small>
+
+                <strong>
+                    Sofyan
+                </strong>
+
+            </div>
+
+
+            <div class="identity-item">
+
+                <small>
+                    NIM
+                </small>
+
+                <strong>
+                    2024520009
+                </strong>
+
+            </div>
+
+
+            <div class="identity-item">
+
+                <small>
+                    Program Studi
+                </small>
+
+                <strong>
+                    Informatika
+                </strong>
+
+            </div>
+
+
+            <div class="identity-item">
+
+                <small>
+                    Perguruan Tinggi
+                </small>
+
+                <strong>
+                    Universitas Madura
+                </strong>
+
+            </div>
+
+
+            <div class="identity-item">
+
+                <small>
+                    Lokasi
+                </small>
+
+                <strong>
+                    Pamekasan, Jawa Timur
+                </strong>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         7 & 8. TEMA
+    ========================== -->
+
+    <section id="tema">
+
+        <div class="section-title">
+
+            <span>道 · DAO</span>
+
+            <h2>
+                Tema & Filosofi
+            </h2>
+
+        </div>
+
+
+        <div class="card theme-box">
+
+            <p>
+                Website ini menggunakan tema
+                <strong style="color:#f0c66b;">
+                    Donghua / Xianxia
+                </strong>
+                yang terinspirasi dari nuansa dunia
+                kultivasi dalam
+                <em>Renegade Immortal</em>.
+                Warna hitam menggambarkan keteguhan,
+                silver menggambarkan ketenangan,
+                sedangkan emas dan oranye menggambarkan
+                energi serta semangat dalam proses belajar.
+            </p>
+
+
+            <div class="symbols">
+
+                <div class="symbol">
+                    ⚔
+                </div>
+
+                <div class="symbol">
+                    ☯
+                </div>
+
+                <div class="symbol">
+                    🔥
+                </div>
+
+                <div class="symbol">
+                    ✦
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <h2>
+            SOFYAN
+        </h2>
+
+        <p>
+            Dibuat dengan ♥ oleh 009_sofyan —
+            P1 Pemrograman Platform
+        </p>
+
+
+        <div class="footer-links">
+
+            <a
+                href="https://github.com/Sofyant17"
+                target="_blank"
+            >
+                GitHub
+            </a>
+
+            <!-- GANTI # DENGAN LINK VIDEO P1 -->
+            <a href="#">
+                Video P1
+            </a>
+
+            <a href="#motivasi">
+                My Profile
+            </a>
+
+        </div>
+
+
+        <p style="margin-top:25px;">
+            © 2026 Sofyan · My Profile
+        </p>
+
+    </footer>
+
+</body>
+</html>
 
