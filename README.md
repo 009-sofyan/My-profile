@@ -1,33 +1,33 @@
-# ✦ My Profile — Sofyan
+# 🌙 My Profile — Sofyan
 
-Website biodata pribadi yang dibuat untuk memenuhi tugas **P1 Pemrograman Platform**.
+Website biodata pribadi untuk tugas **P1 Pemrograman Platform**.
 
-Website ini menampilkan informasi pribadi, motivasi, kemampuan teknologi, pendidikan, serta proyek yang pernah dikerjakan dengan konsep visual bertema **Donghua / Xianxia**.
+Website ini dibuat dengan konsep visual **Donghua / Xianxia**, menggunakan perpaduan warna gelap, emas, silver, dan orange untuk memberikan kesan elegan dan misterius.
 
 ---
 
 ## 👤 Tentang Saya
 
-Halo, saya **Sofyan**, mahasiswa Program Studi Informatika di **Universitas Madura**.
+Halo, saya **Sofyan**, mahasiswa Program Studi Informatika di Universitas Madura.
 
-Saya memiliki ketertarikan pada dunia teknologi dan pemrograman. Melalui berbagai tugas dan proyek, saya terus belajar memahami cara membuat aplikasi, mengelola database, menggunakan Git/GitHub, serta mengembangkan kemampuan dalam pemrograman web.
+Saya memiliki ketertarikan pada dunia teknologi, khususnya dalam bidang pemrograman dan pengembangan aplikasi. Melalui project ini, saya ingin memperkenalkan diri sekaligus menampilkan beberapa kemampuan dan project yang pernah saya kerjakan.
 
 ---
 
-## 🎯 Tujuan Pembuatan
+## 🎯 Tujuan Project
 
-Website **My Profile** dibuat sebagai bagian dari tugas:
+Project **My Profile** dibuat untuk memenuhi tugas **P1 Pemrograman Platform**.
 
-> **P1 Pemrograman Platform**
+Website ini berisi:
 
-Tujuan dari pembuatan website ini adalah:
-
-- Membuat halaman biodata pribadi berbasis web.
-- Menampilkan identitas dan riwayat pendidikan.
-- Menampilkan kemampuan teknologi yang sedang dipelajari.
-- Menampilkan salah satu proyek yang pernah dikerjakan.
-- Menerapkan penggunaan Git dan GitHub.
-- Membuat tampilan website yang memiliki tema dan identitas visual yang konsisten.
+- Biodata pribadi
+- Motivasi
+- Kemampuan atau skills
+- Riwayat pendidikan
+- Project yang pernah dikerjakan
+- Identitas pribadi
+- Informasi GitHub
+- Dokumentasi video tugas
 
 ---
 
@@ -35,25 +35,39 @@ Tujuan dari pembuatan website ini adalah:
 
 | Informasi | Keterangan |
 |---|---|
-| Nama | Sofyan |
+| Nama Lengkap | Sofyan |
+| Nama Panggilan | Sofyan |
 | NIM | 2024520009 |
 | Program Studi | Informatika |
-| Universitas | Universitas Madura |
-| Pendidikan Sebelumnya | SMKN 1 Tlanakan |
-| Jurusan | Teknik Komputer dan Jaringan (TKJ) |
+| Perguruan Tinggi | Universitas Madura |
+| Lokasi | Pamekasan, Jawa Timur |
 
 ---
 
-## 🛠️ Kemampuan Teknologi
+## 🎓 Pendidikan
 
-Kemampuan yang ditampilkan pada website ini masih dalam tahap pemula dan terus dikembangkan.
+### Universitas Madura
+**Program Studi Informatika**  
+2024 — Sekarang
 
-- HTML & CSS — Pemula
-- JavaScript — Pemula
-- Python — Pemula
-- Git & GitHub — Pemula
-- TypeScript — Pemula
-- Flutter — Pemula
+### SMKN 1 Tlanakan
+**Teknik Komputer dan Jaringan (TKJ)**  
+Lulusan
+
+---
+
+## 🛠️ Skills
+
+Berikut beberapa teknologi yang sedang saya pelajari:
+
+| Teknologi | Level |
+|---|---|
+| HTML & CSS | Pemula |
+| JavaScript | Pemula |
+| Python | Pemula |
+| Git & GitHub | Pemula |
+| TypeScript | Pemula |
+| Flutter | Pemula |
 
 ---
 
@@ -61,47 +75,54 @@ Kemampuan yang ditampilkan pada website ini masih dalam tahap pemula dan terus d
 
 ### Sistem Informasi Perpustakaan
 
-Salah satu proyek yang pernah saya kerjakan adalah **Sistem Informasi Perpustakaan**.
+Salah satu project yang pernah saya kerjakan adalah **Sistem Informasi Perpustakaan**.
 
-Aplikasi ini digunakan untuk mengelola data perpustakaan seperti:
-
-- Data buku
-- Kategori buku
-- Rak buku
-- Stok buku
-- Data petugas
-- Login petugas
-- Pencarian buku
-
-Project ini dibuat dengan konsep **frontend dan backend** yang saling terhubung menggunakan REST API.
+Project ini dibuat untuk membantu pengelolaan data perpustakaan, seperti data buku, kategori buku, rak, dan pengguna.
 
 ### Teknologi yang digunakan
 
-- Svelte
+- SvelteKit
 - Express.js
 - TypeScript
 - Drizzle ORM
 - MariaDB
 - REST API
 
----
+### Fitur Utama
 
-## 🎨 Konsep Desain
-
-Website My Profile menggunakan konsep visual **Donghua / Xianxia**.
-
-Inspirasi desain menggunakan nuansa dunia kultivasi dengan kombinasi warna:
-
-- ⚫ Hitam — keteguhan dan kedalaman
-- 🥈 Silver — ketenangan
-- 🟡 Emas — pencapaian dan perjalanan
-- 🟠 Oranye — semangat dan energi
-
-Konsep tersebut digunakan untuk memberikan tampilan yang berbeda dari website biodata pada umumnya, tetapi tetap menjaga keterbacaan informasi.
+- Login petugas
+- Menampilkan daftar buku
+- Pencarian buku
+- Pengelolaan kategori buku
+- Pengelolaan rak
+- Menambah data buku
+- Mengubah data buku
+- Menghapus data buku
+- Menampilkan stok buku
 
 ---
 
-## 📂 Struktur Folder
+## 🎨 Konsep Design
+
+Website **My Profile** menggunakan konsep visual:
+
+**Donghua / Xianxia / Cultivation**
+
+Tema ini terinspirasi dari visual karakter donghua dengan penggunaan:
+
+- Background hitam
+- Warna emas
+- Silver
+- Orange
+- Efek glow
+- Typography bergaya klasik
+- Layout modern dan responsif
+
+Konsep tersebut digunakan untuk membuat tampilan biodata lebih unik dan berbeda dari desain biodata biasa.
+
+---
+
+## 📁 Struktur Project
 
 ```text
 My-profile/
