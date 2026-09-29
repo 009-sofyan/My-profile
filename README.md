@@ -102,6 +102,13 @@ Project ini dibuat untuk membantu pengelolaan data perpustakaan, seperti data bu
 
 ---
 
+## 🔗 Link
+
+- 🎥 **YouTube:** [Video P1 Pemrograman Platform](https://youtu.be/nit8d1C1l08?feature=shared)
+- 💻 **GitHub:** [My Profile Repository](https://github.com/009-sofyan/My-profile)
+
+---
+
 ## 🎨 Konsep Design
 
 Website **My Profile** menggunakan konsep visual:
@@ -129,7 +136,5 @@ My-profile/
 │
 ├── biodata/
 │   └── index.html
-│
-├── .gitignore
 │
 └── README.md
