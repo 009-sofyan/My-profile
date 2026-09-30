@@ -105,7 +105,8 @@ Project ini dibuat untuk membantu pengelolaan data perpustakaan, seperti data bu
 ## 🔗 Link
 
 - 🎥 **YouTube:** [Video P1 Pemrograman Platform](https://youtu.be/nit8d1C1l08?feature=shared)
-- 💻 **GitHub:** [My Profile Repository](https://github.com/009-sofyan/My-profile)
+  💻 **GitHub:** [My Profile Repository](https://github.com/009-sofyan/My-profile)
+- **biodata:** [biodata saya](https://009-sofyan.github.io/My-profile/biodaata/)
 
 ---
 
